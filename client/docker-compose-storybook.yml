@@ -1,0 +1,10 @@
+services:
+    storybook:
+        container_name: matchworks-client-storybook
+        build:
+            context: .
+            dockerfile: Dockerfile-storybook
+        ports:
+            - 6006:6006
+        environment:
+            - BROWSER=none
